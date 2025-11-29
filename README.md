@@ -180,9 +180,9 @@ Para desplegar el proyecto en producción:
 
 ## Autor
 
-Proyecto desarrollado como parte de un trabajo académico universitario.
+WebOs Inc.
 
 ## Licencia
 
-Este proyecto es propiedad de Constructora y Obras Civiles Reinaldo Jaramillo.
+Este proyecto es propiedad de Constructora y Obras Civiles Reinaldo Jaramillo & WebOs Inc.
 
