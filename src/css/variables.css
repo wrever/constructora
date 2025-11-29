@@ -1,0 +1,70 @@
+/* ============================================
+   VARIABLES Y COLORES GLOBALES
+   ============================================
+   
+   Propósito: Definir todas las variables CSS globales
+   incluyendo colores, tipografía, espaciado, bordes,
+   sombras, transiciones y breakpoints para mantener
+   consistencia en todo el proyecto.
+   ============================================ */
+
+:root {
+  /* ===== COLORES PRINCIPALES ===== */
+  /* Paleta profesional negro y rojo - Constructora */
+  --color-primary: #000000;        /* Negro - Header principal */
+  --color-secondary: #950101;      /* Rojo oscuro - Acentos y destacados */
+  --color-accent: #FF0000;         /* Rojo brillante - Elementos secundarios */
+  --color-dark: #3D0000;           /* Rojo muy oscuro - Detalles */
+  --color-light: #F4F4F4;          /* Gris muy claro - Fondos */
+  --color-white: #ffffff;          /* Blanco puro */
+  --color-text: #333333;           /* Gris oscuro para texto legible */
+  --color-border: #d1d5db;         /* Bordes grises suaves */
+  --color-shadow: rgba(0, 0, 0, 0.15);
+
+  /* ===== TIPOGRAFÍA ===== */
+  --font-primary: 'Arial', sans-serif;
+  --font-secondary: 'Georgia', serif;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --line-height-normal: 1.6;
+  --line-height-tight: 1.3;
+
+  /* ===== ESPACIADO ===== */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+
+  /* ===== BORDES Y RADIOS ===== */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-width: 1px;
+
+  /* ===== SOMBRAS ===== */
+  --shadow-sm: 0 2px 4px var(--color-shadow);
+  --shadow-md: 0 4px 8px var(--color-shadow);
+  --shadow-lg: 0 8px 16px var(--color-shadow);
+
+  /* ===== TRANSICIONES ===== */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease-in-out;
+  --transition-slow: 0.5s ease-in-out;
+
+  /* ===== BREAKPOINTS ===== */
+  --bp-mobile: 480px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+  --bp-wide: 1280px;
+
+  /* ===== CONTENEDOR ===== */
+  --max-width: 1200px;
+  --container-padding: 1rem;
+}

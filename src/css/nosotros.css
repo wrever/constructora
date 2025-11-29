@@ -1,0 +1,494 @@
+/* ============================================
+   SECCIÓN NOSOTROS - "SOBRE NOSOTROS"
+   ============================================
+   
+   Propósito: Estilos para la sección sobre nosotros
+   con diseño profesional, estadísticas destacadas
+   y información de la empresa.
+   ============================================ */
+
+/* ===== SECCIÓN NOSOTROS PRINCIPAL ===== */
+.nosotros {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #ffffff 100%);
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.nosotros::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(149, 1, 1, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.nosotros::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: -100px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(149, 1, 1, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.nosotros .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== TÍTULO PRINCIPAL ===== */
+.nosotros .container > h2 {
+  font-size: var(--font-size-xxxl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-align: center;
+  margin: 0 0 var(--spacing-xl) 0;
+  letter-spacing: -0.5px;
+  position: relative;
+  padding-bottom: var(--spacing-lg);
+}
+
+.nosotros .container > h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-secondary), var(--color-accent));
+  border-radius: 2px;
+}
+
+/* ===== DESCRIPCIÓN PRINCIPAL ===== */
+.nosotros .container > p {
+  font-size: var(--font-size-base);
+  color: #555;
+  line-height: var(--line-height-relaxed);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-2xl) auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  border-left: 4px solid var(--color-secondary);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.nosotros .container > p:hover {
+  box-shadow: 0 8px 25px rgba(149, 1, 1, 0.12);
+  transform: translateY(-2px);
+  border-left-color: var(--color-accent);
+}
+
+/* ===== CONTENEDOR DE ESTADÍSTICAS ===== */
+.nosotros-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+}
+
+/* ===== TARJETA DE ESTADÍSTICA ===== */
+.stat-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-secondary), var(--color-accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(149, 1, 1, 0.15);
+  border-color: var(--color-secondary);
+}
+
+.stat-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* ===== NÚMERO DE ESTADÍSTICA ===== */
+.stat-number {
+  font-size: 48px;
+  font-weight: var(--font-weight-bold);
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--spacing-sm);
+  font-family: 'Arial', sans-serif;
+}
+
+/* ===== ETIQUETA DE ESTADÍSTICA ===== */
+.stat-label {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+  transition: color 0.3s ease;
+}
+
+.stat-card:hover .stat-label {
+  color: var(--color-secondary);
+}
+
+/* ===== DESCRIPCIÓN DE ESTADÍSTICA ===== */
+.stat-description {
+  font-size: var(--font-size-sm);
+  color: #777;
+  line-height: var(--line-height-normal);
+  transition: color 0.3s ease;
+}
+
+.stat-card:hover .stat-description {
+  color: #555;
+}
+
+/* ===== CONTENEDOR DE VALORES ===== */
+.nosotros-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+}
+
+/* ===== TARJETA DE VALOR ===== */
+.value-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid var(--color-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(149, 1, 1, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(149, 1, 1, 0.12);
+  border-left-color: var(--color-accent);
+}
+
+/* ===== ICONO DEL VALOR ===== */
+.value-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-lg);
+  font-size: 28px;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+  transform: scale(1.1);
+}
+
+/* ===== TÍTULO DEL VALOR ===== */
+.value-card h3 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-md) 0;
+  transition: color 0.3s ease;
+}
+
+.value-card:hover h3 {
+  color: var(--color-secondary);
+}
+
+/* ===== DESCRIPCIÓN DEL VALOR ===== */
+.value-card p {
+  font-size: var(--font-size-sm);
+  color: #666;
+  line-height: var(--line-height-normal);
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.value-card:hover p {
+  color: #555;
+}
+
+/* ===== BOTÓN CTA ===== */
+.nosotros-cta {
+  text-align: center;
+  margin-top: var(--spacing-2xl);
+}
+
+.nosotros-cta .btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: var(--border-radius-md);
+  font-weight: var(--font-weight-bold);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(149, 1, 1, 0.3);
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-base);
+}
+
+.nosotros-cta .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(149, 1, 1, 0.4);
+  background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
+}
+
+/* ===== RESPONSIVE TABLET ===== */
+@media (max-width: 1024px) {
+  .nosotros {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .nosotros .container > h2 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .nosotros .container > p {
+    font-size: var(--font-size-sm);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .nosotros-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+  }
+
+  .nosotros-values {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+  }
+
+  .stat-number {
+    font-size: 40px;
+  }
+
+  .value-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+  }
+}
+
+/* ===== RESPONSIVE MOBILE ===== */
+@media (max-width: 768px) {
+  .nosotros {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .nosotros::before {
+    width: 200px;
+    height: 200px;
+    right: -50px;
+    top: 20px;
+  }
+
+  .nosotros::after {
+    width: 150px;
+    height: 150px;
+    left: -50px;
+    bottom: 50px;
+  }
+
+  .nosotros .container > h2 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+  }
+
+  .nosotros .container > h2::after {
+    width: 60px;
+  }
+
+  .nosotros .container > p {
+    font-size: 14px;
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.7;
+  }
+
+  .nosotros-stats {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+  }
+
+  .nosotros-values {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+  .stat-label {
+    font-size: var(--font-size-sm);
+  }
+
+  .stat-description {
+    font-size: 12px;
+  }
+
+  .value-card {
+    padding: var(--spacing-lg);
+  }
+
+  .value-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+  }
+
+  .value-card h3 {
+    font-size: var(--font-size-base);
+  }
+
+  .value-card p {
+    font-size: 13px;
+  }
+
+  .stat-card:hover,
+  .value-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* ===== RESPONSIVE PEQUEÑOS MÓVILES ===== */
+@media (max-width: 480px) {
+  .nosotros {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .nosotros .container > h2 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+  }
+
+  .nosotros .container > h2::after {
+    width: 50px;
+    height: 3px;
+  }
+
+  .nosotros .container > p {
+    font-size: 13px;
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-left-width: 3px;
+  }
+
+  .nosotros-stats {
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+
+  .nosotros-values {
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+
+  .stat-card {
+    padding: var(--spacing-lg);
+  }
+
+  .stat-number {
+    font-size: 32px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+  }
+
+  .stat-description {
+    font-size: 11px;
+  }
+
+  .value-card {
+    padding: var(--spacing-md);
+  }
+
+  .value-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .value-card h3 {
+    font-size: 14px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .value-card p {
+    font-size: 12px;
+  }
+
+  .nosotros-cta {
+    margin-top: var(--spacing-xl);
+  }
+
+  .nosotros-cta .btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+
+  .stat-card:hover,
+  .value-card:hover {
+    transform: translateY(-2px);
+  }
+}

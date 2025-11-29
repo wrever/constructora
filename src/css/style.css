@@ -1,0 +1,35 @@
+/* ============================================
+   ARCHIVO PRINCIPAL - IMPORTACIÓN DE MÓDULOS
+   ============================================
+   
+   Propósito: Archivo principal que importa todos los
+   módulos CSS en orden correcto para mantener una
+   estructura limpia, modular y fácil de mantener.
+   ============================================ */
+
+/* 1. Variables y Colores */
+@import url('./variables.css');
+
+/* 2. Reset y Estilos Base */
+@import url('./reset.css');
+
+/* 3. Layout y Estructura */
+@import url('./layout.css');
+
+/* 4. Header y Navegación */
+@import url('./header.css');
+
+/* 5. Hero y Banners */
+@import url('./hero.css');
+
+/* 6. Formularios */
+@import url('./forms.css');
+
+/* 7. Componentes Reutilizables */
+@import url('./components.css');
+
+/* 8. Footer */
+@import url('./footer.css');
+
+/* 9. Clases de Utilidad */
+@import url('./utilities.css');

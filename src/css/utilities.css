@@ -1,0 +1,24 @@
+/* ============================================
+   CLASES DE UTILIDAD
+   ============================================
+   
+   Propósito: Definir clases de utilidad reutilizables
+   para márgenes, padding, colores, display, visibilidad,
+   tamaños y otras propiedades comunes.
+   ============================================ */
+
+/* ===== ANIMACIONES ===== */
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.6);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    transform: scale(1);
+  }
+}

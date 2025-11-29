@@ -1,0 +1,36 @@
+/* ============================================
+   RESET Y ESTILOS BASE
+   ============================================
+   
+   Propósito: Resetear estilos por defecto del navegador
+   y establecer estilos base para elementos HTML
+   (headings, párrafos, enlaces, listas, tablas, etc.)
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

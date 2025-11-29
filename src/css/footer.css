@@ -1,0 +1,306 @@
+/* ============================================
+   FOOTER
+   ============================================
+   
+   Prop�sito: Estilar el footer con informaci�n
+   de contacto, enlaces r�pidos, servicios,
+   redes sociales y copyright.
+   ============================================ */
+
+/* ===== FOOTER PRINCIPAL ===== */
+.footer {
+  background: linear-gradient(135deg, #000000 0%, #3D0000 50%, #950101 100%);
+  color: var(--color-white);
+  padding: var(--spacing-2xl) var(--spacing-md);
+  margin-top: var(--spacing-2xl);
+  border-top: 10px solid var(--color-secondary);
+}
+
+/* Contenedor interno */
+.footer .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 60px;
+}
+/* Grid de contenido principal */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+/* Secciones del footer */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section h4 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 var(--spacing-lg) 0;
+  color: var(--color-white);
+  letter-spacing: 0.5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: var(--spacing-sm) 0;
+}
+
+.footer-section a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  display: inline-block;
+  font-size: var(--font-size-sm);
+}
+
+.footer-section a:hover {
+  color: var(rgba(255, 255, 255, 0.05));
+  transform: translateX(4px);
+}
+
+/* ===== SECCION LOGO ===== */
+.footer-logo {
+  grid-column: 1 / -1;
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer-logo-img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  transition: transform var(--transition-normal);
+}
+
+.footer-logo-img:hover {
+  transform: scale(1.05);
+}
+
+.footer-logo-text h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+  color: var(--color-white);
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.footer-tagline {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 4px 0 0 0;
+}
+
+.footer-description {
+  font-size: var(--font-size-sm);
+  color: #ffffff;
+  line-height: var(--line-height-normal);
+  margin: var(--spacing-md) 0 0 0;
+}
+
+/* ===== SECCION ENLACES R�PIDOS ===== */
+.footer-links {
+  border-left: 3px solid var(--color-secondary);
+  padding-left: var(--spacing-lg);
+}
+
+/* ===== SECCION SERVICIOS ===== */
+.footer-services {
+  border-left: 3px solid var(--color-secondary);
+  padding-left: var(--spacing-lg);
+}
+
+/* ===== SECCION CONTACTO ===== */
+.footer-contact {
+  border-left: 3px solid var(--color-secondary);
+  padding-left: var(--spacing-lg);
+}
+
+.footer-contact-info li {
+  margin: var(--spacing-md) 0;
+  font-size: var(--font-size-sm);
+  color: #ffffff;
+}
+
+.footer-contact-info strong {
+  display: inline-block;
+  color: #ffffff !important;
+  margin-right: var(--spacing-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+.footer-contact-info li strong {
+  color: #ffffff !important;
+}
+
+.footer-section strong {
+  color: #ffffff !important;
+}
+
+.footer-contact li strong,
+.footer-contact-info li strong,
+.footer-section.footer-contact li strong {
+  color: #ffffff !important;
+}
+
+.footer-contact-info a {
+  color: #cbd5e1;
+  word-break: break-all;
+}
+
+.footer-contact-info a:hover {
+  color: var(--color-white);
+}
+
+.footer-contact-info span {
+  color: #cbd5e1;
+}
+
+/* ===== PIE DEL FOOTER ===== */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 240, 196, 0.15);
+  padding-top: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  align-items: center;
+  text-align: center;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.footer-social h4 {
+  margin: 0;
+  font-size: var(--font-size-base);
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.social-links li a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 240, 196, 0.1);
+  border-radius: 50%;
+  color: var(--color-white);
+  border: 2px solid var(--color-secondary);
+  transition: all var(--transition-normal);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+}
+
+.social-links li a:hover {
+  background: var(--color-secondary);
+  color: #0C2B4E;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(255, 240, 196, 0.2);
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright p {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: #cbd5e1;
+  line-height: var(--line-height-normal);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+
+  .footer-logo {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .footer-logo {
+    grid-column: auto;
+    border-bottom: 2px solid rgba(255, 240, 196, 0.15);
+    padding-bottom: var(--spacing-lg);
+  }
+
+  .footer-logo-container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-logo-img {
+    height: 60px;
+  }
+
+  .footer-section {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+
+  .footer-logo-text h3 {
+    font-size: var(--font-size-lg);
+  }
+
+  .footer-section h4 {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-social {
+    width: 100%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
