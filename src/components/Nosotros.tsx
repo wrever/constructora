@@ -62,7 +62,7 @@ const Nosotros = () => {
 
         {/* CTA */}
         <div className="nosotros-cta">
-          <a href="#contacto" className="btn" onClick={(e) => handleNavClick(e, 'contacto')}>
+          <a href="#galeria" className="btn" onClick={(e) => handleNavClick(e, 'galeria')}>
             Conoce Nuestros Proyectos
           </a>
         </div>
