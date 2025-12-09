@@ -9,8 +9,8 @@
  */
 
 // Configuración del email
-$to_email = 'info@reinaldojaramillo.com'; // ← CAMBIA ESTO por tu correo corporativo
-$from_email = 'noreply@reinaldojaramillo.com'; // ← Opcional: email de origen
+$to_email = 'info@construccionesrj.cl'; // ← CAMBIA ESTO por tu correo corporativo
+$from_email = 'noreply@construccionesrj.cl'; // ← Opcional: email de origen
 $subject_prefix = 'Nuevo mensaje de contacto - ';
 
 // Headers para prevenir spam
